@@ -1,1 +1,129 @@
-# saqr0.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drift District</title>
+<meta name="description" content="Drift District: open track nights for drivers and spectators.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--asphalt:#262A30;--deep:#1B1E23;--paint:#F2C230;--smoke:#ECEAE4;--rubber:#8D9299;--signal:#E4572E}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--asphalt);color:var(--smoke);font:400 1.0625rem/1.6 Barlow,system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--paint);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 0}
+nav b{font:900 1.3rem 'Big Shoulders Display',Impact,sans-serif;letter-spacing:.02em}
+nav a{margin-left:1.25rem;text-decoration:none;font-weight:600}
+nav a:hover{color:var(--paint)}
+.hero{position:relative;overflow:hidden;padding:2rem 0 5rem}
+.hero h1{font:900 clamp(4rem,17vw,12rem)/.84 'Big Shoulders Display',Impact,sans-serif;text-transform:uppercase;letter-spacing:-.01em;position:relative;z-index:1}
+.hero h1 span{display:block;transform:skewX(-9deg)}
+.hero h1 span+span{color:var(--paint);margin-left:.6em}
+.hero p{max-width:30rem;margin-top:1.5rem;position:relative;z-index:1}
+.skid{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.skid path{fill:none;stroke:var(--deep);stroke-width:26;stroke-linecap:round;stroke-dasharray:1600;stroke-dashoffset:1600;animation:draw 2.2s .3s ease-out forwards}
+.skid path+path{stroke-width:14;animation-delay:.45s}
+@keyframes draw{to{stroke-dashoffset:0}}
+.btn{display:inline-block;margin-top:1.5rem;padding:.8rem 1.6rem;background:var(--paint);color:var(--deep);font-weight:600;text-decoration:none;border-radius:2px;position:relative;z-index:1}
+.btn:hover{background:var(--smoke)}
+section{padding:3.5rem 0;border-top:4px dashed var(--paint)}
+h2{font:900 clamp(2rem,6vw,3.2rem)/1 'Big Shoulders Display',Impact,sans-serif;text-transform:uppercase;margin-bottom:1.5rem}
+.grid{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+h3{font-size:1.15rem;margin-bottom:.4rem}
+.grid p{color:#C9CCD0}
+table{width:100%;border-collapse:collapse}
+th,td{text-align:left;padding:.9rem .5rem;border-bottom:1px solid #3A3F47}
+th{color:var(--rubber);font-weight:500}
+td:first-child{font-weight:600;white-space:nowrap}
+.tbl{overflow-x:auto}
+.flag{color:var(--signal);font-weight:600}
+.rules{padding-left:1.2rem;max-width:40rem}
+.rules li{margin:.5rem 0}
+footer{background:var(--deep);padding:2.5rem 0;color:var(--rubber)}
+footer a{color:var(--smoke)}
+@media (prefers-reduced-motion:reduce){.skid path{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <nav>
+    <b>Drift District</b>
+    <div><a href="#events">Events</a><a href="#how">How it works</a><a href="#join">Join</a></div>
+  </nav>
+</header>
+
+<main>
+<div class="hero">
+  <svg class="skid" viewBox="0 0 1200 560" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M-20 470 C 300 520, 520 500, 640 380 S 760 160, 900 230 S 1000 430, 1240 300"/>
+    <path d="M-20 505 C 320 550, 560 530, 680 410 S 800 190, 930 265 S 1030 460, 1240 335"/>
+  </svg>
+  <div class="wrap">
+    <h1><span>Drift</span><span>District</span></h1>
+    <p>Open track nights for drivers who want to slide and people who want to watch. Bring your car, or bring a chair.</p>
+    <a class="btn" href="#events">See the next night</a>
+  </div>
+</div>
+
+<section id="events">
+  <div class="wrap">
+    <h2>Upcoming nights</h2>
+    <div class="tbl">
+    <table>
+      <thead><tr><th>Date</th><th>Session</th><th>Gates</th><th>Entry</th></tr></thead>
+      <tbody>
+        <tr><td>Sat 14 Nov</td><td>Open practice</td><td>6:00 pm</td><td>Drivers $40 · Spectators free</td></tr>
+        <tr><td>Sat 28 Nov</td><td>Tandem night</td><td>6:00 pm</td><td>Drivers $55 · Spectators $10</td></tr>
+        <tr><td>Sat 12 Dec</td><td>Winter finale <span class="flag">Few spots left</span></td><td>5:00 pm</td><td>Drivers $70 · Spectators $10</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <h2>How a night works</h2>
+    <div class="grid">
+      <div><h3>Drivers</h3><p>Register online, pass the scrutineering check at the gate, then run in your group. Beginners and experienced drivers run separately.</p></div>
+      <div><h3>Spectators</h3><p>Watch from the marked viewing area behind the barriers. Food trucks and the pit walk open until the last run.</p></div>
+      <div><h3>Instructors</h3><p>New to drifting? Book a 20-minute ride-along or a coached session before the main event.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Track rules</h2>
+    <ol class="rules">
+      <li>Helmet on whenever the car is moving. No exceptions.</li>
+      <li>Check tyres, fluids and loose items before every session.</li>
+      <li>Stay behind the barriers unless a marshal waves you through.</li>
+      <li>Alcohol-free for drivers, all night.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="join">
+  <div class="wrap">
+    <h2>Get on the list</h2>
+    <p style="max-width:34rem">Email us with your name, your car, and which night you want. We reply within two days with your entry details.</p>
+    <a class="btn" href="mailto:hello@yourdomain.com?subject=Drift%20District%20entry">Email hello@yourdomain.com</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; 2026 Drift District. Questions? <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
